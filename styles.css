@@ -1,0 +1,127 @@
+body {
+background-color: #f9f9f9; 
+overflow-x: hidden;
+ }
+h3{ text-align: center;
+  padding: 50px;
+  background: #f9f9f9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  color: #3E474F;}
+.wrapper {
+   height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.movie-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.movie-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+.movie-text {
+  height: 300px;
+  width: 327px;
+}
+.movie-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+.movie-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #515151;
+  letter-spacing: 0.2em;
+}
+.movie-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+span {
+  
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+.ticket-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #8599ad;
+  cursor: pointer;
+  outline: none;
+}
+.ticket-btn button:hover {
+  background-color: #516579;
+  
+}
+.back-btn button {
+  height: 50px;
+  width: 176px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #8599ad;
+  cursor: pointer;
+  outline: none;
+}
+@media (max-width: 650px) {h3{ text-align: center;
+  padding: 50px;}
+ 
+  .wrapper {
+     width: 310px;
+   }
+  .movie-text h1 {
+   margin: 0 0 0 20px; 
+}
+  .movie-text h2 {
+  margin: 0 0 47px 20px;
+}
+.movie-text p {
+  margin: 0 0 0 20px;
+  }
+  
+.movie-img {
+ display: none;
+}
+}
