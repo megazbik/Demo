@@ -1,0 +1,320 @@
+body {
+    overflow-x: hidden;
+    text-align: center;
+  }
+  
+  header {
+    font-family: 'Playfair Display', serif;
+    min-height: 380px;
+    min-width: 768px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), url('https://raw.githubusercontent.com/megazbik/Demo/img/welcomeslide.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav {
+      font-family: 'Playfair Display', serif;
+      padding: 10px 35px;
+      display: flex;
+      position: relative;
+      h2 {
+        margin-bottom: 0;
+        flex: 1;
+        letter-spacing: 2px;
+      }
+      .nav-button {
+        color: lightgray;
+        font-size: 23px;
+      }
+      div {
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        text-align: center;
+        transform: scale(0);
+        opacity: 0;
+        transition: opacity 0.4s;
+        ul {
+          position: relative;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          li {
+            text-transform: uppercase;
+            a {
+              display: block;
+              color: lightgray;
+              padding: 15px 5px;
+            }
+          }
+        }
+      }
+    }
+    .welcomeslide {
+      line-height: 0;
+      margin: auto;
+      color: #fff;
+    }
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .selectmovie {
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    padding: 20px;
+    height: 100%;
+    background: #f9f9f9;
+    color: #474747;
+  }
+  
+  .custom-font {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 60px;
+    line-height: 120%;
+    padding-bottom: 20px;
+  }
+  
+  .center-text {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: #516579;
+    line-height: 70%;
+    h2 {
+      margin-top: 25px;
+      line-height: 0;
+    }
+    p {
+      margin-top: 0;
+      line-height: 1.5;
+    }
+    a {
+      color: #d4af37;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-bottom: solid 2px #d4af37;
+    }
+  }
+  
+  .add-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .center-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #516579;
+  }
+  
+  .custom-h1 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: normal;
+    margin: auto;
+    line-height: 120%;
+  }
+  
+  h1 {
+    flex-wrap: wrap;
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 34px;
+    color: #474747;
+  }
+  
+  .ticket {
+    text-align: center;
+    padding: 50px;
+    background: #FFF5EE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+  
+  .payment button {
+    float: center;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #8599ad;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #34495E;
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box;
+    padding:20px 20px;
+    border-width: 0;
+    transition: all .3s linear;
+    &:checked {
+      background-color: #8599ad;
+    }
+    &:focus {
+      outline: 0 none;
+      box-shadow: none;
+    }
+  }
+  
+  footer {
+    margin: 0;
+    position: relative;
+    background: #141414;
+    color: lightgray;
+    h5 {
+      line-height: 1.0;
+    }
+    .info {
+      padding: 35px 40px !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .copyright {
+      background: #232323;
+      color: #969696;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 10px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      span {
+        border-bottom: solid 1px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    header {
+      background-attachment: scroll;
+    }
+  }
+  
+  @media (min-width: 400px) {
+    nav {
+      div {
+        position: initial !important;
+        background: none !important;
+        opacity: initial !important;
+        transform: initial !important;
+      }
+      .nav-button {
+        display: none;
+      }
+      div ul {
+        position: initial !important;
+        flex-direction: row !important;
+        .exit-menu {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 1245px) {
+    footer {
+      .info {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px 80px;
+        flex-direction: row;
+        justify-content: space-around;
+        .locations {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          h4, h5 {
+            flex: 1 0 100%;
+            font-family: 'Raleway', sans-serif;
+          }
+        }
+        .hours {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          h4, h5 {
+            flex: 1 0 100%;
+            font-family: 'Raleway', sans-serif;
+          }
+        }
+      }
+      .copyright {
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'Playfair Display', serif;
+      }
+    }
+  }
+  
+  .phone {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .mail {
+    width: 26px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .facebook {
+    height: 20px;
+    width: 20px;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    input[type="checkbox"] {
+        padding:5px 5px;
+    }
+    @media only screen and (max-width: 750px) {
+      h2 {
+        display: none;
+      }
+    }
+  }
