@@ -12,3 +12,4 @@ https://codepen.io/megazbik/pen/YovPWZ Panel logowania
 https://codepen.io/megazbik/pen/KjewmE Repertuar Gdańsk
 https://codepen.io/megazbik/pen/orygWB Repertuar Poznań
 https://codepen.io/megazbik/pen/KjewaJ Repertuar Łódź
+https://codepen.io/megazbik/pen/ewGgRg Główna
